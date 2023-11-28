@@ -1,0 +1,149 @@
+:root{
+    --fondo: hsl(225, 100%, 94%);
+    --boton: hsl(245, 75%, 52%);
+    --cuadrado:  hsl(225, 100%, 98%);
+    --parrafo: hsl(224, 23%, 55%);
+    --titulos: hsl(223, 47%, 23%);
+}
+
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font: initial;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--fondo);
+    background-image: url(./images/pattern-background-desktop.svg);
+}
+
+
+.main__contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card__orden{
+    width: 320px;
+   
+    background-color: var(--cuadrado);
+    border-radius: 20px;
+}
+
+.imagen__arriba{
+    background-image: url(./images/illustration-hero.svg);
+    background-position: center;/*centra la imagen*/
+    background-size: cover; /*cubre completamente el contenedor*/
+    background-repeat: no-repeat;/*para que no se repita la imagen*/
+    width: 320px;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+    
+
+}
+.orden__targeta{
+    padding: 15px 20px;
+    text-align: center;
+
+}
+.summary_titulo{
+    color: var(--titulos);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+
+}
+.info__summary{
+    color: var(--parrafo);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px 20px;
+    line-height: 1.5;/*permite separar las letras*/
+
+
+}
+ .plan__anual{
+   display: flex;
+   justify-content: space-around;/*distribuir los elementos uniformemente dentro del contenedor*/
+   align-items: center;
+   width: 100%;
+   height: 80px;
+   margin:20px 0px ;
+   border-radius: 10px;
+   background-color: var(--fondo);
+   text-align: left;
+}
+
+.titulo__anual{
+    font-size: 20px;
+    color: var(--titulos);
+}
+.dinero{
+    font-size: 16px;
+    color: var(--parrafo);
+}
+
+.change{
+    color: var(--boton);
+    cursor: pointer;
+    font-weight: 700
+}
+.change:hover{
+    color: mediumorchid;
+    text-decoration: none;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: none;
+    width: auto;/*el boton ocupara todo el contenedor*/
+    padding: 12px 70px;
+    margin: 5px auto;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+
+
+}
+
+.boton__primero{
+    background-color: var(--boton);
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--cuadrado);
+    
+}
+.boton__primero:hover{
+    background-color: mediumorchid;
+
+}
+
+.botob__segundario{
+    color: var(--parrafo);
+    cursor: pointer;
+}
+
+.botob__segundario:hover{
+    color: var(--titulos);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
